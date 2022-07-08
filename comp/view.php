@@ -7,7 +7,7 @@
     </head>
     <body>
         <!--New message block-->
-        <?php //require_once "componentGbookAdd.php" ?>
+        <?php require_once "componentGbookAdd.php" ?>
         <h1>Add your message:</h1>
         <form action="<?=$_SERVER['SCRIPT_NAME']?>" method="POST">
             Your name: <input type="text" name="new[name]"><br/>
@@ -17,11 +17,11 @@
         </form>
 
         <!--Guest book block-->
-        <?php //require_once "componentGbookShow.php" ?>
+        <?php require_once "componentGbookShow.php" ?>
         <h1>Guest book messages:</h1>
         <?php foreach($data as $id => $e) { ?>
             Name: <?=$e['name']?><br/>
-            Comment:<br/><?=nl2br($e['text'])?><hr/>
+            Comment:<br/><?=nl2br($e['message'])?><hr/>
         <?php } ?>
 
         <!--News block-->
