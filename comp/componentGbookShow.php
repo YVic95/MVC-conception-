@@ -1,6 +1,7 @@
 <?php
     /**
      * Show the record component
+     * Prepares data to display
      */
     if(!defined("GBOOK")) {
         define("GBOOK", "gbook.dat");
