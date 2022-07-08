@@ -19,7 +19,7 @@
         <!--Guest book block-->
         <?php //require_once "componentGbookShow.php" ?>
         <h1>Guest book messages:</h1>
-        <?php foreach($book as $id => $e) { ?>
+        <?php foreach($data as $id => $e) { ?>
             Name: <?=$e['name']?><br/>
             Comment:<br/><?=nl2br($e['text'])?><hr/>
         <?php } ?>
